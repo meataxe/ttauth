@@ -1,5 +1,5 @@
-function onLoad () {
-  console.log("onload");
+function init () {
+  console.log("init");
 }
 
-window.load(onLoad);
+window.load(function() { init(); });
