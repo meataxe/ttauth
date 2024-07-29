@@ -16,4 +16,4 @@ function showCurrentValue(event, sourceData)
     console.log(e.currentTarget === this); // logs `true`
 }
 
-window.load(function() { init(); });
+window.onLoad(function() { init(); });
