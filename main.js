@@ -1,3 +1,15 @@
+var f5 = `H9MKYDQ099
+Y6491TXY0J
+80M13EFT1Y
+FHK4J9YQRP
+NT37RKRJ7E`;
+
+var rdp = `TC8582K2MD 
+M628K6KH6V
+XY7JFR31XM
+YWYWHMHEXN
+TYMVPDQ2J2`;
+
 function init () {
   console.log("init");
 
