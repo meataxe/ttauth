@@ -13,19 +13,20 @@ TYMVPDQ2J2`;
 function init () {
   console.log("init");
 
-  document.getElementById("input-f5").addEventListener("onInput", function (e) { showCurrentValue(e, "f5"); });  
-  document.getElementById("input-rdp").addEventListener("onInput", function (e) { showCurrentValue(e, "rdp"); });  
+  document.getElementById("input-f5").addEventListener("onInput", showCurrentValue);  
+  document.getElementById("input-rdp").addEventListener("onInput", showCurrentValue);  
 }
 
-function showCurrentValue(event, sourceData)
+function showCurrentValue(event)
 {
-    console.log("showCurrentValue: " + sourceData);
+    console.log("showCurrentValue");
   
     const value = event.target.value;
     document.getElementById("label").innerText = value;
 
     console.log(this.className); // logs the className of my_element
     console.log(e.currentTarget === this); // logs `true`
+    console.log("value: " + value);
 }
 
 document.addEventListener("DOMContentLoaded", function(arg) {
