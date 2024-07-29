@@ -28,4 +28,6 @@ function showCurrentValue(event, sourceData)
     console.log(e.currentTarget === this); // logs `true`
 }
 
-window.onload(function() { init(); });
+document.addEventListener("DOMContentLoaded", function(arg) {
+    init();
+});
