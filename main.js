@@ -13,8 +13,8 @@ TYMVPDQ2J2`;
 function init () {
   console.log("init");
 
-  document.getElementById("input-f5").addEventListener("onInput", showCurrentValue);  
-  document.getElementById("input-rdp").addEventListener("onInput", showCurrentValue);  
+  document.getElementById("input-f5").addEventListener("input", showCurrentValue);  
+  document.getElementById("input-rdp").addEventListener("input", showCurrentValue);  
 }
 
 function showCurrentValue(event)
