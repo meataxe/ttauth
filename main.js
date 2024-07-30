@@ -20,7 +20,7 @@ function init () {
 function showCurrentValue(event)
 {
     console.log("showCurrentValue");  
-    const value = event.target.value;
+    const value = event.target.value.toLowerCase();
     const src = this.id.split('-')[1];
 
     if (value.length !== 6 || !["rdp", "f5"].includes(src) ) { return; }
