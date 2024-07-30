@@ -11,8 +11,6 @@ YWYWHMHEXN
 TYMVPDQ2J2`.split("\n");
 
 function init () {
-  console.log("init");
-
   document.getElementById("input-f5").addEventListener("input", showCurrentValue);  
   document.getElementById("input-rdp").addEventListener("input", showCurrentValue);  
 }
@@ -40,10 +38,10 @@ function showCurrentValue(event)
       ? f5[i1r][i1c] + f5[i2r][i2c] + f5[i3r][i3c]
       : rdp[i1r][i1c] + rdp[i2r][i2c] + rdp[i3r][i3c];
   
-    console.log(this.className); // logs the className of my_element
-    console.log("value: " + value);
-    console.log("index: " + `${i1r}:${i1c} | ${i2r}:${i2c} | ${i3r}:${i3c}`);
-    console.log("result: " + result);
+    //console.log(this.className); // logs the className of my_element
+    //console.log("value: " + value);
+    //console.log("index: " + `${i1r}:${i1c} | ${i2r}:${i2c} | ${i3r}:${i3c}`);
+    //console.log("result: " + result);
 
     document.getElementById(`code-${src}`).textContent = result;
 }
