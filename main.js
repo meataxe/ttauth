@@ -37,8 +37,8 @@ function showCurrentValue(event)
       : rdp[i1r][i1c] + rdp[i2r][i2c] + rdp[i2r][i2c];
   
     console.log(this.className); // logs the className of my_element
-    console.log(e.currentTarget === this); // logs `true`
     console.log("value: " + value);
+    console.log("index: " + `${i1r}:${i1c} | ${i2r}:${i2c} | ${i2r}${i2c}`;
     console.log("result: " + result);
 }
 
