@@ -28,9 +28,9 @@ function showCurrentValue(event)
     /* [item][index][row|column] */
     const offset = "a".charCodeAt(0);
     var 
-      i1c = value[0].charCodeAt(0) - offset, i1r = value[1],
-      i2c = value[2].charCodeAt(0) - offset, i2r = value[3],
-      i3c = value[4].charCodeAt(0) - offset, i3r = value[5];
+      i1c = value[0].charCodeAt(0) - offset, i1r = value[1] - 1,
+      i2c = value[2].charCodeAt(0) - offset, i2r = value[3] - 1,
+      i3c = value[4].charCodeAt(0) - offset, i3r = value[5] - 1;
 
     if (i1c > 10 || i2c > 10 || i3c > 10) { return; }
     if (i1r > 5 || i2r > 5 || i3r > 5) { return; }  
