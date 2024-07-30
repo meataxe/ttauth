@@ -32,6 +32,9 @@ function showCurrentValue(event)
       i2c = value[2].charCodeAt(0) - offset, i2r = value[3],
       i3c = value[4].charCodeAt(0) - offset, i3r = value[5];
 
+    if (i1c > 10 || i2c > 10 || i3c > 10) { return; }
+    if (i1r > 5 || i2r > 5 || i3r > 5) { return; }  
+  
     var result = src === "f5"
       ? f5[i1r][i1c] + f5[i2r][i2c] + f5[i2r][i2c]
       : rdp[i1r][i1c] + rdp[i2r][i2c] + rdp[i2r][i2c];
