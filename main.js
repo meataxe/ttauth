@@ -19,9 +19,10 @@ function init () {
 
 function showCurrentValue(event)
 {
-    console.log("showCurrentValue");  
     const value = event.target.value.toLowerCase();
     const src = this.id.split('-')[1];
+
+    document.getElementById(`code-${src}`).textContent = "";
 
     if (value.length !== 6 || !["rdp", "f5"].includes(src) ) { return; }
 
@@ -43,6 +44,8 @@ function showCurrentValue(event)
     console.log("value: " + value);
     console.log("index: " + `${i1r}:${i1c} | ${i2r}:${i2c} | ${i3r}:${i3c}`);
     console.log("result: " + result);
+
+    document.getElementById(`code-${src}`).textContent = result;
 }
 
 document.addEventListener("DOMContentLoaded", function(arg) {
