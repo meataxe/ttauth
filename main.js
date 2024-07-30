@@ -23,7 +23,7 @@ function showCurrentValue(event)
     const value = event.target.value;
     const src = this.id.split('-')[1];
 
-    if (value.length !== 6 || !["rdp", "f5"].includes(value) ) { return; }
+    if (value.length !== 6 || !["rdp", "f5"].includes(src) ) { return; }
 
     /* [item][index][row|column] */
     const offset = "a".charCodeAt(0);
