@@ -38,7 +38,7 @@ function showCurrentValue(event)
   
     console.log(this.className); // logs the className of my_element
     console.log("value: " + value);
-    console.log("index: " + `${i1r}:${i1c} | ${i2r}:${i2c} | ${i2r}${i2c}`);
+    console.log("index: " + `${i1r}:${i1c} | ${i2r}:${i2c} | ${i2r}:${i2c}`);
     console.log("result: " + result);
 }
 
