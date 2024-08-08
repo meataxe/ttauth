@@ -19,7 +19,7 @@ function init () {
 }
 
 function copyContents() {
-  const targetId = event.target.id;
+  const targetId = event.currentTarget.id;
   const text = targetId === "btn-copy-f5" 
     ? document.getElementById('code-f5').value
     : document.getElementById('code-rdp').value;
