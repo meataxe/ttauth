@@ -23,8 +23,10 @@ function copyContents() {
   const text = targetId === "btn-copy-f5" 
     ? document.getElementById('code-f5').value
     : document.getElementById('code-rdp').value;
-  
-  navigator.clipboard.writeText(text)
+
+  if (text.length > 0) {
+    navigator.clipboard.writeText(text);
+  }
 }
 
 function clearContents () {
