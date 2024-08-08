@@ -13,6 +13,14 @@ TYMVPDQ2J2`.split("\n");
 function init () {
   document.getElementById("input-f5").addEventListener("input", showCurrentValue);  
   document.getElementById("input-rdp").addEventListener("input", showCurrentValue);  
+  document.getElementById("btn-clear").addEventListener("onclick", clearForm);  
+}
+
+function clearForm () {
+  document.getElementById('input-f5').textContent = "";
+  document.getElementById('input-rdp').textContent = "";
+  //document.getElementById('code-f5').textContent = "";
+  //document.getElementById('code-rdp').textContent = "";
 }
 
 function showCurrentValue(event)
