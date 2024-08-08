@@ -13,7 +13,14 @@ TYMVPDQ2J2`.split("\n");
 function init () {
   document.getElementById("input-f5").addEventListener("input", showCurrentValue);  
   document.getElementById("input-rdp").addEventListener("input", showCurrentValue);  
-  document.getElementById("btn-clear").onclick = clearContents;  
+  document.getElementById("btn-clear").onclick = clearContents;
+  document.getElementById("btn-copy-f5").onclick = copyContents("f5");
+  document.getElementById("btn-copy-rdp").onclick = copyContents("rdp");
+}
+
+function copyContents(src) {
+  var text = document.getElementById(`code-${src}`).textContent;
+  navigator.clipboard.writeText(text)
 }
 
 function clearContents () {
