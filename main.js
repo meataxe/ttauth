@@ -19,8 +19,8 @@ function init () {
 function clearContents () {
   document.getElementById('input-f5').value = "";
   document.getElementById('input-rdp').value = "";
-  //document.getElementById('code-f5').textContent = "";
-  //document.getElementById('code-rdp').textContent = "";
+  document.getElementById('code-f5').textContent = "";
+  document.getElementById('code-rdp').textContent = "";
 }
 
 function showCurrentValue(event)
