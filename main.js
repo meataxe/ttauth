@@ -19,15 +19,15 @@ function init () {
 }
 
 function copyContents(src) {
-  var text = document.getElementById(`code-${src}`).textContent;
+  var text = document.getElementById(`code-${src}`).value;
   navigator.clipboard.writeText(text)
 }
 
 function clearContents () {
   document.getElementById('input-f5').value = "";
   document.getElementById('input-rdp').value = "";
-  document.getElementById('code-f5').textContent = "";
-  document.getElementById('code-rdp').textContent = "";
+  document.getElementById('code-f5').value = "";
+  document.getElementById('code-rdp').value = "";
 }
 
 function showCurrentValue(event)
@@ -35,7 +35,7 @@ function showCurrentValue(event)
     const value = event.target.value.toLowerCase();
     const src = this.id.split('-')[1];
 
-    document.getElementById(`code-${src}`).textContent = "";
+    document.getElementById(`code-${src}`).value = "";
 
     if (value.length !== 6 || !["rdp", "f5"].includes(src) ) { return; }
 
@@ -58,7 +58,7 @@ function showCurrentValue(event)
     //console.log("index: " + `${i1r}:${i1c} | ${i2r}:${i2c} | ${i3r}:${i3c}`);
     //console.log("result: " + result);
 
-    document.getElementById(`code-${src}`).textContent = result;
+    document.getElementById(`code-${src}`).value = result;
 }
 
 document.addEventListener("DOMContentLoaded", function(arg) {
